@@ -11,7 +11,7 @@ const MetaMaskWidget = () => {
     const [recipientAddress, setRecipientAddress] = useState('');
     const [amount, setAmount] = useState('');
     const API_URL ="https://sepolia.infura.io/v3/6b9db45bfbd74afead8f5a40b72bcf44";
-    const PRIVATE_KEY = "68558adab1eae71c42228993d3dfe225c8c4dd602073ed0c9858133daf1d9760";
+    const PRIVATE_KEY = "68558adab1eae71c42228993d3dfe2sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf";
     const CONTRACT_ADDRESS = "0x06821763Bd70583d7D4B1C32b08a23fE1ce946F1"
     const {abi} = require("../../Token.json")
     const provider = new ethers.AlchemyProvider('sepolia',API_URL);

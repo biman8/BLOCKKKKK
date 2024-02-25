@@ -49,13 +49,13 @@ app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 const PORT = process.env.PORT || 6001;
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect("mongodb+srv://biman8:pXy1I1eeKlbiH0PF@cluster0.ec7hmjj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
-    // User.insertMany(users);
-    // Post.insertMany(posts);
+     // User.insertMany(users);
+     // Post.insertMany(posts);
   })
   .catch((error) => console.log(`${error} did not connect`));
